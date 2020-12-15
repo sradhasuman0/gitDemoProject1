@@ -8,16 +8,16 @@ import javax.persistence.Id;
 public class details {
 	@Id
 	
-	private String name;
+	private String myname;
 	private int rollnum;
 	private int class_in;
 	private String grade;
 	
-	public String getName() {
-		return name;
+	public String getmyName() {
+		return myname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setmyName(String myname) {
+		this.myname = myname;
 	}
 	public int getRollnum() {
 		return rollnum;
