@@ -12,7 +12,7 @@ public class details {
 	private int rollnum;
 	private int class_in;
 	private String grade;
-	private String feedback;
+	
 	public String getName() {
 		return name;
 	}
@@ -37,16 +37,12 @@ public class details {
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	public String getFeedback() {
-		return feedback;
-	}
-	public void setFeedback(String feedback) {
-		this.feedback = feedback;
+
 	}
 	@Override
 	public String toString() {
 		return "details [name=" + name + ", rollnum=" + rollnum + ", class_in=" + class_in + ", grade=" + grade
-				+ ", feedback=" + feedback + "]";
+				+  "]";
 	}
 	
 	
