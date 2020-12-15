@@ -8,16 +8,16 @@ import javax.persistence.Id;
 public class details {
 	@Id
 	
-	private String name;
+	private String yourname;
 	private int rollnum;
 	private int class_in;
 	private String grade;
 	
-	public String getName() {
+	public String getyourName() {
 		return name;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setyourName(String yourname) {
+		this.yourname = yourname;
 	}
 	public int getRollnum() {
 		return rollnum;
@@ -41,7 +41,7 @@ public class details {
 	}
 	@Override
 	public String toString() {
-		return "details [name=" + name + ", rollnum=" + rollnum + ", class_in=" + class_in + ", grade=" + grade
+		return "details [name=" + yourname + ", rollnum=" + rollnum + ", class_in=" + class_in + ", grade=" + grade
 				+  "]";
 	}
 	
