@@ -13,11 +13,11 @@ public class details {
 	private int class_in;
 	private String grade;
 	
-	public String getmyName() {
-		return myname;
+	public String getName() {
+		return name;
 	}
-	public void setmyName(String myname) {
-		this.myname = myname;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getRollnum() {
 		return rollnum;
