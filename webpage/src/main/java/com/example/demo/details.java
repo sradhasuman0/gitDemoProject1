@@ -9,18 +9,18 @@ public class details {
 	@Id
 	
 
-	private String yourname;
+	private String name;
 
 	private int rollnum;
 	private int class_in;
 	private String grade;
 	
 
-	public String getyourName() {
+	public String getName() {
 		return name;
 	}
-	public void setyourName(String yourname) {
-		this.yourname = yourname;
+	public void setName(String name) {
+		this.name = name;
 
 	}
 	public int getRollnum() {
