@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class details {
 	@Id
 	
-	private String myname;
+	private String myname;;
 	private int rollnum;
 	private int class_in;
 	private String grade;
