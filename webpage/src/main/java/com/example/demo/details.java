@@ -9,6 +9,8 @@ import javax.persistence.Id;
 public class details {
 	@Id
 	
+	//release branch for demo
+	
 
 	private String name;
 
