@@ -8,6 +8,7 @@ import javax.persistence.Id;
 
 public class details {
 	@Id
+	//test branch for demo
 	
 
 	private String name;
