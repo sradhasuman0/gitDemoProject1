@@ -1,3 +1,4 @@
+
 package com.example.demo;
 
 import javax.persistence.Entity;
@@ -7,21 +8,31 @@ import javax.persistence.Id;
 
 public class details {
 	@Id
-	
-
-	private String yourname;
+	private String name;
 
 	private int rollnum;
 	private int class_in;
 	private String grade;
-	
-
-	public String getyourName() {
-		return yourname;
+	public details() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setyourName(String yourname) {
-		this.yourname = yourname;
-
+	@Override
+	public String toString() {
+		return "details [name=" + name + ", rollnum=" + rollnum + ", class_in=" + class_in + ", grade=" + grade + "]";
+	}
+	public details(String name, int rollnum, int class_in, String grade) {
+		super();
+		this.name = name;
+		this.rollnum = rollnum;
+		this.class_in = class_in;
+		this.grade = grade;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getRollnum() {
 		return rollnum;
@@ -41,14 +52,6 @@ public class details {
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-
-	
-	@Override
-	public String toString() {
-		return "details [name=" + yourname + ", rollnum=" + rollnum + ", class_in=" + class_in + ", grade=" + grade
-				+  "]";
-	}
-	
 	
 	
 
