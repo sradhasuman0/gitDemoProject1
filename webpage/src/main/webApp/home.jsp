@@ -13,7 +13,7 @@
 <input type="text" name="rollnum"><br>
 <input type="text" name="class_in"><br>
 <input type="text" name="grade"><br>
-<input type="text" name="feedback"><br>
+
 <input type="submit"><br>
 
 
