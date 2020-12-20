@@ -17,7 +17,7 @@ public class details {
 	
 
 	public String getyourName() {
-		return name;
+		return yourname;
 	}
 	public void setyourName(String yourname) {
 		this.yourname = yourname;
@@ -42,7 +42,7 @@ public class details {
 		this.grade = grade;
 	}
 
-	}
+	
 	@Override
 	public String toString() {
 		return "details [name=" + yourname + ", rollnum=" + rollnum + ", class_in=" + class_in + ", grade=" + grade
