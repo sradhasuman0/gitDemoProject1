@@ -9,7 +9,7 @@ class WebpageApplicationTests {
 
 	@Test
 	void contextLoads() {
-		Assertions.assertEquals("hello","hello");
+		
 	}
 	
 
