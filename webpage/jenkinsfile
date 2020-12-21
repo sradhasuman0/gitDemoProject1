@@ -13,5 +13,12 @@ pipeline {
                }
             }
          }
+         post {
+         always{
+         junit 'webpage/target/surfire-reports/*.xml'
       }
+      }
+      }
+      
+      
           
