@@ -1,26 +1,30 @@
 pipeline {
      agent any
-     
      stages {
-       stage ('build Stage') {
-            steps {
+          stage ('Compile Stage') {
+          
+             steps {
+                withMaven(maven : 'apache-maven-3.6.1') {
+                  bat 'mvn clean compile'
+                   }
+                }
+              }
+              stage ('Testing Stage') {
               
-                           
-                     sh '''
-              cd webpage
-              mvn clean install
-    '''
+                steps {
+                     withMaven(maven : 'apache-maven-3.6.1') {
+                      bat'mvn test'
+                       }
+                  }
                }
-            }
-             
-         }
-         
-         post {
-         always{
-         junit 'a /webpage/target/surfire-reports/*.xml'
-      }
-      }
-      }
-      
-      
+              stage ('Install Stage') {
+              
+              steps {
+                   withMaven(maven : 'apache-maven-3.6.1') {
+                    bat'mvn install'
+                    }
+                 }
+             }
+          }
+       }
           
