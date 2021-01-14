@@ -2,7 +2,7 @@ pipeline {
      agent any
      
      stages {
-       stage ('Compile Stage') {
+       stage ('build Stage') {
             steps {
               
                            
@@ -12,6 +12,7 @@ pipeline {
     '''
                }
             }
+             
          }
          post {
          always{
