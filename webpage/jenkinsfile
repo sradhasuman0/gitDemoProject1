@@ -14,6 +14,7 @@ pipeline {
             }
              
          }
+         
          post {
          always{
          junit 'a /webpage/target/surfire-reports/*.xml'
