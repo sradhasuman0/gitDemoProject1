@@ -28,7 +28,7 @@ pipeline{
 	    }
 	     stage('ansible-deploy'){
 	      steps{
-		      sh 'ansible-playbook Student/playbook.yml'
+		      sh 'ansible-playbook webpage/playbook.yml'
 		  
 	        // ansiblePlaybook credentialsId: 'Ansible', disableHostKeyChecking: true, installation: 'AnsibleTest', inventory: 'Student/dev.inv', playbook: 'Student/Test.yml'
 	      }
