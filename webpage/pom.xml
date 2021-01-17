@@ -44,18 +44,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		<dependency>
-        <groupId>com.atlassian.jira</groupId>
-        <artifactId>jira-rest-java-client-core</artifactId>
-        <version>3.0.0</version>
-    </dependency>
-
-    <dependency>
-        <groupId>com.atlassian.jira</groupId>
-        <artifactId>jira-rest-java-client-api</artifactId>
-        <version>3.0.0</version>
-    </dependency>
 	</dependencies>
 	
    
