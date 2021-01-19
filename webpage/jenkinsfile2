@@ -10,7 +10,7 @@ pipeline{
                   steps{
                       script{
 		    	                sh '''
-          cd demo1
+          cd webpage
           mvn clean install
     '''
                       	  }
