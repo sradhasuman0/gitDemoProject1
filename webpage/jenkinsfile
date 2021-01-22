@@ -33,7 +33,7 @@ pipeline{
 			       [
 			       artifactId: 'webpage', 
 			       classifier: '', 
-			       file: 'webpage/target/webpage-0.0.1.jar', 
+			       file: 'webpage/target/webpage-0.0.1-SNAPSHOT.jar', 
 			       type: 'jar'
 			       ]
 			 ], 
