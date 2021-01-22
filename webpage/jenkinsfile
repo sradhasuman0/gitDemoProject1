@@ -26,6 +26,27 @@ pipeline{
 				junit 'webpage/target/surefire-reports/*.xml'
 		    }
 	    }
+	    
+		     stage('Upload Jar to Nexus'){
+			steps{
+		               nexusArtifactUploader artifacts: [
+			       [
+			       artifactId: 'webpage', 
+			       classifier: '', 
+			       file: 'webpage/target/webpage-0.0.1.jar', 
+			       type: 'jar'
+			       ]
+			 ], 
+			 credentialsId: 'b70d5f18-94f9-40db-856d-1d05c5e7fa1a', 
+			 groupId: 'com.example', 
+			 nexusUrl: '35.224.53.223:8081', 
+			 nexusVersion: 'nexus2', 
+			 protocol: 'http', 
+			 repository: 'http://35.224.53.223:8081/repository/gitDemoProject1_snap/', 
+			 version: '0.0.1'
+			
+		    }
+	    }
 	     stage('ansible-deploy'){
 	      steps{
 		      sh 'ansible-playbook webpage/playbook.yml'
