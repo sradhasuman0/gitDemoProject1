@@ -12,7 +12,7 @@ pipeline{
 		    }
 	    }
 	    
-	    stage('QA test Stage'){
+	   stage('QA test Stage'){
 			steps{
 					sh '''
           cd webpage
@@ -39,7 +39,7 @@ pipeline{
 		  
 	        // ansiblePlaybook credentialsId: 'Ansible', disableHostKeyChecking: true, installation: 'AnsibleTest', inventory: 'Student/dev.inv', playbook: 'Student/Test.yml'
 	      }
-	  }
+	  } 
 	    }
 	    }
 	    
