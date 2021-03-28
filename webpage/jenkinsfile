@@ -12,14 +12,14 @@ pipeline{
 		    }
 	    }
 	    
-	   stage('QA test Stage'){
-			steps{
-					sh '''
-          cd webpage
-          mvn clean test package sonar:sonar
-    '''
-				}
-		    }
+	   //stage('QA test Stage'){
+		//	steps{
+		//			sh '''
+          //cd webpage
+         // mvn clean test package sonar:sonar
+   // '''
+	//			}
+	//	    }
 		    
 		    //stage('Junit test Stage'){
 			//steps{
